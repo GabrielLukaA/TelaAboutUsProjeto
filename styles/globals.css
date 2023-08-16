@@ -1,27 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.shadow-oi{
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+}
+.alata-use{
+  color: var(--pink, #F04A94);
+font-family: Alata, sans-serif;
+font-size: 56px;
+font-style: normal;
+font-weight: 400;
+line-height: 0px; /* 0% */ 
+
+}
+.alata-use-paragraph{
+  color: rgba(0, 0, 0, 0.75);
+/* Paragraph Body */
+font-family: Montserrat, sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.shadow-orange{
+  box-shadow: 0px 0px 25px 0px rgba(255, 135, 26, 0.25);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ball{
+width: 665.039px;
+height: 508.5px;
+position: absolute;
+right: 60px;
+top: 225px;
+overflow: hidden;
+z-index:-100;
+fill: radial-gradient(104.62% 128.06% at 94.31% 99.92%, rgba(170, 25, 193, 0.90) 0%, rgba(225, 0, 244, 0.90) 39.22%, rgba(255, 122, 0, 0.90) 100%);
 }

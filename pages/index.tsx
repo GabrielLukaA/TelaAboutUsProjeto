@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <body>
+    <div>
       <header className="w-full px-8 h-[100px] flex justify-between items-center shadow-oi">
         <img src="/Icon.svg" alt="" />
         <div className="flex w-[180px] items-center justify-between ">
@@ -16,11 +16,6 @@ export default function Home() {
       </header>
 
       <main className="w-full justify-center flex h-[642px] items-center">
-        <img
-          src="/Rectangle 450.svg"
-          alt=""
-          className="ball po:right-[260px]"
-        />
         <div className="w-1/2 pl-[144px]  pt-[116px] flex justify-center gap-16 flex-col">
           <h1 className="alata-use">Headline Here</h1>
           <p className="alata-use-paragraph max-w-[480px]">
@@ -35,23 +30,27 @@ export default function Home() {
             Confirmar
           </button>
         </div>
-        <div className="w-1/2 h-max flex gap-6 pt-[96px]">
-          <img
-            width={"270px"}
-            height={"450px"}
-            src="/img-left.svg"
+      <div className="flex">
+        <img
+            src="/Rectangle 450.svg"
             alt=""
-            className=""
+            className="ball mt-[67px]"
           />
-          <img
-            width={"270px"}
-            height={"450px"}
-            src="/img-right.svg"
-            alt=""
-            className=""
-          />
-        </div>
+          <div className="absolute w-1/2 flex gap-6 pt-[100px] ml-[40px]">
+            <img
+              src="/img-right.jpg"
+              alt=""
+              className="images"
+            />
+            <img
+              src="/img-left.jpg"
+              alt=""
+              
+              className="images"
+            />
+          </div>
+      </div>
       </main>
-    </body>
+    </div>
   );
 }

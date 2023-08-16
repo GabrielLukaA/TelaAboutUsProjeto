@@ -32,10 +32,13 @@ line-height: 130%;
 .ball{
 width: 665.039px;
 height: 508.5px;
-position: absolute;
 right: 60px;
-top: 225px;
+top:60px;
 overflow: hidden;
 z-index:-100;
 fill: radial-gradient(104.62% 128.06% at 94.31% 99.92%, rgba(170, 25, 193, 0.90) 0%, rgba(225, 0, 244, 0.90) 39.22%, rgba(255, 122, 0, 0.90) 100%);
+}
+
+.images{
+  @apply shadow-2xl shadow-orange rounded-md object-cover w-[270px] h-[450px]
 }
